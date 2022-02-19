@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amazot App</title>
+    <link rel="stylesheet" href="./css/main.css" />
+</head>
+
+<body>
+    <div class="AppContainer">
+        <h1>Amazot</h1>
+        <h2>Adding new book</h2>
+        <p>
+            If you would like to add a new book to our library, please fill out the form below.
+        </p>
+        <div data-role="inputsContainer" class="inputsContainer">
+            <input type="text" name="name" placeholder="Book name" data-role="bookInput" /><br />
+            <label for="">Publish date:</label>
+            <input type="date" name="publishDate" placeholder="insert publish date" data-role="dateInput" /><br />
+            <div class="divChackBox">
+                <label for="">is in stock - </label>
+                <input type="checkbox" name="stock" data-role="inStock" />
+            </div>
+            <label for="">Adding Author:</label>
+            <input type="text" name="author" placeholder="Author name" data-role="authorInput" /><br />
+            <input type="text" name="authorAdress" placeholder="Author adress" data-role="authorAdressInput" /><br />
+            <input type="tel" name="authorPhone" placeholder="Author phone" data-role="authorPhoneInput" /><br />
+            <div class="divChackBox">
+                <label for="">is a live - </label>
+                <input type="checkbox" name="isAlive" data-role="isAlive" />
+            </div>
+            <label for="">Author birthday:</label>
+            <input type="date" name="AuthorBirthday" placeholder="AuthorBirthday" data-role="AuthorBirthdayInput" /><br />
+
+            <button data-role="sendBtn">send</button>
+
+            <h2>Our library</h2>
+            <p>To view all the books in the library, click the button below</p>
+            <button data-role="showDbBtn">show books</button>
+
+
+            <p id="getAllBooks"></p>
+            <p id="findById"></p>
+        </div>
+    </div>
+    <script src="js/books.js"></script>
+</body>
+
+</html>
